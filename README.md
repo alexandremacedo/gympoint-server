@@ -14,8 +14,8 @@ RESTful API created with NodeJS + Express + PostgreSQL to pass files to the GymP
 Com o Git instalado em sua sua máquina, abra o terminal.
 Windows -> **cmd** ou **powershell** execute os comandos abaixo:
 ```ssh
-$ git clone https://github.com/AlexandreMacedoo/rocketseat-server-gympoint-challenge.git
-$ cd rocketseat-server-gympoint-challenge
+$ git clone https://github.com/AlexandreMacedoo/gympoint-server.git
+$ cd gympoint-server
 ```
 
 ### Instalando as dependências
@@ -43,6 +43,6 @@ $ yarn dev
 
 
 # License
-The rocketseat-server-gympoint-challenge is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The gympoint-server is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
