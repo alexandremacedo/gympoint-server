@@ -1,0 +1,38 @@
+Criar pasta -> mkdir project
+Yarn -> yarn init -y
+Express -> yarn add express
+Estruturar pastas
+  >src 
+    >app
+    app.js
+    routes.js
+    server.js
+
+Sucrase e nodemon -> yarn add sucrase nodemon -D
+  Criar arquivo -> nodemon.json
+    >nodemon.json -> { "execMap": { "js": "node -r sucrase/register" } }
+  Criar script -> package.json
+    >package.json -> { "scripts": { "dev": "nodemon src/server.js" }, "dev:debug": { nodemon --inspect src/server.js } }
+
+Debug -> yarn dev:debug
+  >launch.json -> add -> "request": "attach"
+                         "restart": true,
+                         "protocol": "inspector"
+
+Docker -> docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+
+Eslint -> yarn add eslint -D
+       -> yarn eslint --init
+          >How would you like to use ESLint? 
+            R: To check syntax, find problems, and enforce code style   
+          >What type of modules does your project use? 
+            R: JavaScript modules (import/export)
+          >Which framework does your project use? 
+            R: None of these
+          >Does your project use TypeScript? 
+            R: No
+       -> Remover package-lock.json
+       -> yarn
+
+Instalar Eslint no vscode
+
